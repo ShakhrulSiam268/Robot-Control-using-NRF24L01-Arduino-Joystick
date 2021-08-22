@@ -54,15 +54,6 @@ void loop() {
       else if (data[1] <= 60) {Serial.println(" Right Back ");temp=6;}
     }
 
-    /*
-    if (data[1]>190) {Serial.println(" Forward ");temp=1;}
-    else if (data[1]<60) {Serial.println(" Back "); temp=2;}
-
-    if (data[0]>190) {Serial.println(" Right ");temp=3;}
-    else if (data[0]<60) {Serial.println(" Left ");temp=4;}
-    
-    if (data[0]<190 and data[0]>60 and data[1]<190 and data[1]>60) {Serial.println(" ----NULL------ "); temp=0;}
-    */
 
     
     dly=map(data[10], 1, 255, 3000, 200);
